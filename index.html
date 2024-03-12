@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рандом ОФИСМАГ</title>
+	<link rel="stylesheet" href="src/style.css">
+	<script src="./src/main.js" defer></script>
+	<script src="./src/product-list.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container header">
+			<img class="icon" src="./img/Лого УМЦ 2021.png" alt="">
+			<div class="block-time">
+				<label class="label_time-test" for="input_time-test">Время прохождения теста:</label>
+				<div class="blocktime_option" id="block-time_option">
+					<input class="input_time-test" id="input_time-test" type="text" value="180" readonly>
+					<p class="label_time-test">сек.</p>
+				</div>
+				<div class="block-time_time-scroll" id="block-time_time-scroll"></div>
+			</div>
+		</div>
+	</header>
+	<div class="game">
+		<div class="container game_top">
+			<div class="correct_answers" id="number_of_correct_answers" value="0">0</div>
+			<div class="brand" id="brand">Для начала проверки нажмите старт.</div>
+			<div class="incorrect_answers" id="number_of_incorrect_answers" value="0">0</div>
+		</div>
+		<div class="container game_body">
+			<button class="btn_answer" id="btn_answer-true">Правильно</button>
+			<button class="btn_start" id="btn_start">Старт</button>
+			<button class="btn_answer" id="btn_answer-false">НЕ правильно</button>
+		</div>
+		<div class="container game_footer">
+			<div class="description" id="description"></div>
+			<div class="block-itog" id="block-itog">
+				<div class="block-itog_title">Итог</div>
+				<div class="block-itog_info" id="block-itog_info"></div>
+				<table class="table-itog">
+					<thead>
+						<tr>
+							<th class="table-itog_num">№</th>
+							<th class="table-itog_brand">Бренд</th>
+							<th class="table-itog_description">Верное утверждение</th>
+							<th class="table-itog_description">Утверждение</th>
+							<th class="table-itog_answer">Как ответил сотрудник</th>
+						</tr>
+					</thead>
+					<tbody class="itog-tbody" id="itog-tbody">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
